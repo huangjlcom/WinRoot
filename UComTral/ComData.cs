@@ -89,6 +89,8 @@ namespace WinRobots.UComTral
        RoutePlanner planner = new RoutePlanner();
        public void initNode()
        {
+
+         //we test DataType.Parse(VariableName);
            Node aNode = new Node("A");
            nodeList.Add(aNode);
            Edge aEdge1 = new Edge();
@@ -229,7 +231,7 @@ namespace WinRobots.UComTral
            iEdge2.Weight = 6;
            iNode.EdgeList.Add(iEdge2);
 
-      
+
 
        }
 
@@ -243,7 +245,7 @@ namespace WinRobots.UComTral
            aEdge1.Weight = 10;
            aNode.EdgeList.Add(aEdge1);
 
-           Node bNode = new Node("B"); 
+           Node bNode = new Node("B");
            Edge abEdge1 = new Edge();
            abEdge1.StartNodeID = bNode.ID;
            abEdge1.EndNodeID = "A";
@@ -470,7 +472,7 @@ namespace WinRobots.UComTral
                        aEdge.Weight = 8;
                        atemp.EdgeList.Add(aEdge);
 
-                      
+
                        break;
                    case "A13":
                        aEdge = new Edge();
@@ -479,7 +481,7 @@ namespace WinRobots.UComTral
                        aEdge.Weight = 8;
                        atemp.EdgeList.Add(aEdge);
 
-                    
+
                        break;
                    case "A14":
                        aEdge = new Edge();
@@ -717,7 +719,7 @@ namespace WinRobots.UComTral
                        aEdge.EndNodeID = "A7";
                        aEdge.Weight = 15;
                        atemp.EdgeList.Add(aEdge);
-                       
+
                          aEdge = new Edge();
                        aEdge.StartNodeID = atemp.ID;
                        aEdge.EndNodeID = "A8";
@@ -841,7 +843,7 @@ namespace WinRobots.UComTral
                        aEdge.EndNodeID = "A5";
                        aEdge.Weight = 20;
                        atemp.EdgeList.Add(aEdge);
-                      
+
                        aEdge = new Edge();
                        aEdge.StartNodeID = atemp.ID;
                        aEdge.EndNodeID = "A11";

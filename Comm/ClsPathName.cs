@@ -5,6 +5,7 @@ using System.Collections;
 
 namespace WinRobots.Comm
 {
+  //is my GetResult
     public class ClsPathName
     {
         public string PathStr = "";
@@ -16,7 +17,7 @@ namespace WinRobots.Comm
     {
         public string StartNodeID;
         public string EndNodeID;
-        public double Weight; //权值，代价        
+        public double Weight; //权值，代价
     }
 
 
@@ -244,7 +245,7 @@ namespace WinRobots.Comm
                 PassedPath curPath = planCourse[curNode.ID];
                 foreach (Edge edge in curNode.EdgeList)
                 {
-                    
+
 
                     PassedPath targetPath = planCourse[edge.EndNodeID];
                     if (targetPath == null) continue;
