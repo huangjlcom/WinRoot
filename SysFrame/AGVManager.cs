@@ -6,6 +6,7 @@ namespace WinRobots.SysFrame
 {
    public class AGVManager
     {
+      //特不饿is/getyes
        int _AGVID = 0;//编号
        public string Name = ""; //名称
        public string State = "";//状态
